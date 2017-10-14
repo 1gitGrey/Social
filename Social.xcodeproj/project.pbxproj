@@ -12,9 +12,12 @@
 		46C9579D1F9236BC000E3891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C9579B1F9236BC000E3891 /* Main.storyboard */; };
 		46C9579F1F9236BC000E3891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C9579E1F9236BC000E3891 /* Assets.xcassets */; };
 		46C957A21F9236BC000E3891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C957A01F9236BC000E3891 /* LaunchScreen.storyboard */; };
+		46C957AA1F9237BF000E3891 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46C957A91F9237BF000E3891 /* GoogleService-Info.plist */; };
+		7A2E00400E9F3F514A3731DC /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB49E92FD87C6019FC1DEEF2 /* Pods_Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4221148F9C027734D59FAC54 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		46C957941F9236BC000E3891 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C957971F9236BC000E3891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C957991F9236BC000E3891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		46C9579E1F9236BC000E3891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C957A11F9236BC000E3891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46C957A31F9236BC000E3891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C957A91F9237BF000E3891 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6DD2CCD0BB6C67D5740C87DA /* Pods-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.release.xcconfig"; sourceTree = "<group>"; };
+		CB49E92FD87C6019FC1DEEF2 /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2E00400E9F3F514A3731DC /* Pods_Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				46C957961F9236BC000E3891 /* Social */,
 				46C957951F9236BC000E3891 /* Products */,
+				7ECF7945A2EEF6B6596A26DD /* Pods */,
+				BB587D2A9CA24C9B1F0E1170 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				46C9579E1F9236BC000E3891 /* Assets.xcassets */,
 				46C957A01F9236BC000E3891 /* LaunchScreen.storyboard */,
 				46C957A31F9236BC000E3891 /* Info.plist */,
+				46C957A91F9237BF000E3891 /* GoogleService-Info.plist */,
 			);
 			path = Social;
+			sourceTree = "<group>";
+		};
+		7ECF7945A2EEF6B6596A26DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4221148F9C027734D59FAC54 /* Pods-Social.debug.xcconfig */,
+				6DD2CCD0BB6C67D5740C87DA /* Pods-Social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB587D2A9CA24C9B1F0E1170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB49E92FD87C6019FC1DEEF2 /* Pods_Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46C957A61F9236BC000E3891 /* Build configuration list for PBXNativeTarget "Social" */;
 			buildPhases = (
+				4670B2067C2B042AF00C6D83 /* [CP] Check Pods Manifest.lock */,
 				46C957901F9236BC000E3891 /* Sources */,
 				46C957911F9236BC000E3891 /* Frameworks */,
 				46C957921F9236BC000E3891 /* Resources */,
+				BF05D91BE3110F2367D8F869 /* [CP] Embed Pods Frameworks */,
+				10B897C247003E98DAA7BC6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +154,68 @@
 			files = (
 				46C957A21F9236BC000E3891 /* LaunchScreen.storyboard in Resources */,
 				46C9579F1F9236BC000E3891 /* Assets.xcassets in Resources */,
+				46C957AA1F9237BF000E3891 /* GoogleService-Info.plist in Resources */,
 				46C9579D1F9236BC000E3891 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10B897C247003E98DAA7BC6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4670B2067C2B042AF00C6D83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Social-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF05D91BE3110F2367D8F869 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46C957901F9236BC000E3891 /* Sources */ = {
@@ -271,6 +358,7 @@
 		};
 		46C957A71F9236BC000E3891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4221148F9C027734D59FAC54 /* Pods-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +374,7 @@
 		};
 		46C957A81F9236BC000E3891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD2CCD0BB6C67D5740C87DA /* Pods-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
