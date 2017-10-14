@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46C957981F9236BC000E3891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C957971F9236BC000E3891 /* AppDelegate.swift */; };
-		46C9579A1F9236BC000E3891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C957991F9236BC000E3891 /* ViewController.swift */; };
+		46C9579A1F9236BC000E3891 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C957991F9236BC000E3891 /* SignInVC.swift */; };
 		46C9579D1F9236BC000E3891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C9579B1F9236BC000E3891 /* Main.storyboard */; };
 		46C9579F1F9236BC000E3891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C9579E1F9236BC000E3891 /* Assets.xcassets */; };
 		46C957A21F9236BC000E3891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C957A01F9236BC000E3891 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		4221148F9C027734D59FAC54 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		46C957941F9236BC000E3891 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C957971F9236BC000E3891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46C957991F9236BC000E3891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46C957991F9236BC000E3891 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		46C9579C1F9236BC000E3891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46C9579E1F9236BC000E3891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46C957A11F9236BC000E3891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,8 +63,8 @@
 		46C957961F9236BC000E3891 /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				46C957AB1F923AA2000E3891 /* Controllers */,
 				46C957971F9236BC000E3891 /* AppDelegate.swift */,
-				46C957991F9236BC000E3891 /* ViewController.swift */,
 				46C9579B1F9236BC000E3891 /* Main.storyboard */,
 				46C9579E1F9236BC000E3891 /* Assets.xcassets */,
 				46C957A01F9236BC000E3891 /* LaunchScreen.storyboard */,
@@ -72,6 +72,14 @@
 				46C957A91F9237BF000E3891 /* GoogleService-Info.plist */,
 			);
 			path = Social;
+			sourceTree = "<group>";
+		};
+		46C957AB1F923AA2000E3891 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46C957991F9236BC000E3891 /* SignInVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		7ECF7945A2EEF6B6596A26DD /* Pods */ = {
@@ -202,12 +210,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C9579A1F9236BC000E3891 /* ViewController.swift in Sources */,
+				46C9579A1F9236BC000E3891 /* SignInVC.swift in Sources */,
 				46C957981F9236BC000E3891 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
